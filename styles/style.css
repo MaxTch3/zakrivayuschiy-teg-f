@@ -15,10 +15,13 @@
 */
 
 .page {
+  color: var(--accent-color);
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  background-image: var(--background-gradient);
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-main);
   font-variation-settings: 'wght' var(--font-weight-text);
-  background-color: var(--background-color);
-  color: var(--accent-color)
 }
