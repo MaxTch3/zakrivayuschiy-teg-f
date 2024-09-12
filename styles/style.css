@@ -80,3 +80,14 @@
   content: '▶';
   margin-inline-start: -20px;
 }
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+}
