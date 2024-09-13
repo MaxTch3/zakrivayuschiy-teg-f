@@ -92,7 +92,9 @@
 /* .theme-menu__button:focus-visible {} */
 
 .cards {
-  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .card {
@@ -100,6 +102,7 @@
   flex-direction: column;
   border: 2px solid var(--accent-color);
   padding-block-end: 25px;
+  background-color: var(--background-color);
 }
 
 .card__title {
@@ -145,7 +148,9 @@
 }
 
 .button__text {
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid var(--accent-color);
   font-family: var(--font-accent);
   font-size: 14px;
