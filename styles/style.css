@@ -158,3 +158,10 @@
   inline-size: 130px;
   block-size: 38px;
 }
+
+.footer {}
+
+.floppy-icon {
+  inline-size: 28px;
+  block-size: 28px;
+}
