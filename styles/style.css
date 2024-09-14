@@ -138,7 +138,6 @@
   align-self: flex-end;
   margin-inline-end: 25px;
   border: none;
-  padding: 0;
   background-color: transparent;
 }
 
@@ -159,9 +158,32 @@
   block-size: 38px;
 }
 
-.footer {}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 52px;
+  padding-bottom: 100px;
+}
+
+.footer__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  inline-size: 306px;
+  block-size: 84px;
+}
 
 .floppy-icon {
   inline-size: 28px;
   block-size: 28px;
+}
+
+.footer__button-text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 0.9;
 }
