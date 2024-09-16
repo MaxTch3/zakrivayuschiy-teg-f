@@ -121,10 +121,44 @@
   font-variation-settings: 'wght' var(--font-weight-title);
 }
 
+.card__wrapper {
+  position: relative;
+  text-transform: uppercase;
+}
+
 .card__image {
+  display: block;
   border-block-start: 2px solid var(--accent-color);
   border-block-end: 2px solid var(--accent-color);
   inline-size: 100%;
+}
+
+.card__label {
+  position: absolute;
+  top: 25px;
+  right: 11px;
+  opacity: 0.5;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow:
+    -1px 0 var(--text-stroke-color),
+    0 1px var(--text-stroke-color),
+    1px 0 var(--text-stroke-color),
+    0 -1px var(--text-stroke-color);
+  mix-blend-mode: hard-light;
+}
+
+@supports((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-stroke: 1px var(--text-stroke-color);
+  }
+}
+
+.lowercase-text {
+  text-transform: lowercase;
 }
 
 .card__text-block {
