@@ -29,26 +29,28 @@
 .header {
   margin: 100px 0;
   font-family: var(--font-accent);
-  background-color: var(--background-color);
 }
 
 .header__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   border: 2px solid var(--accent-color);
-  padding: 120px 0 25px;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 25px;
+  background-color: var(--background-color);
+  inline-size: var(--inline-size-content);
 }
 
 .logo {
-  font-size: 49px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .header__title {
   padding-block-start: 20px;
-  font-size: 14px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
 
@@ -92,6 +94,11 @@
 }
 
 /* .theme-menu__button:focus-visible {} */
+
+.main {
+  margin: 0 auto;
+  inline-size: var(--inline-size-content);
+}
 
 .cards {
   display: flex;
@@ -189,11 +196,24 @@
   line-height: 0.9;
   background-color: var(--background-color);
   cursor: pointer;
-  inline-size: 306px;
+  inline-size: 309px;
   block-size: 84px;
 }
 
 .floppy-icon {
   inline-size: 28px;
   block-size: 28px;
+}
+
+@media (width >=1440px) {
+  .footer__button {
+    flex-direction: row;
+    inline-size: 339px;
+    block-size: 55px;
+  }
+
+  .floppy-icon {
+    inline-size: 21px;
+    block-size: 21px;
+  }
 }
