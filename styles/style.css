@@ -152,7 +152,10 @@
   display: block;
   border-block-start: 2px solid var(--accent-color);
   border-block-end: 2px solid var(--accent-color);
+  object-fit: cover;
+  object-position: center;
   inline-size: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card__label {
@@ -329,6 +332,7 @@
 
 .popup__floppy-icon {
   flex-shrink: 0;
+  color: var(--accent-color);
   inline-size: 39px;
   block-size: 39px;
 }
@@ -340,10 +344,39 @@
 }
 
 .popup__text {
+  color: var(--accent-color);
   font-family: var(--font-accent);
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.image-brightness {
+  filter: brightness(140%);
+}
+
+.image-contrast {
+  filter: contrast(125%);
+}
+
+.image-blur {
+  filter: blur(0.07rem);
+}
+
+.image-sepia {
+  filter: sepia(30%);
+}
+
+.image-grayscale {
+  filter: grayscale(0.8);
+}
+
+.image-saturate {
+  filter: saturate(158%);
+}
+
+.image-plenty {
+  filter: brightness(130%) saturate(200%) contrast(150%);
 }
 
 @media (width >=1440px) {
