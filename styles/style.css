@@ -284,14 +284,8 @@
   mix-blend-mode: difference;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-.footer__button {
+.main__save-button {
+  margin: 50px auto 100px;
   inline-size: 309px;
   block-size: 84px;
 }
@@ -380,7 +374,7 @@
 }
 
 @media (width >=1440px) {
-  .footer__button {
+  .main__save-button {
     flex-direction: row;
     inline-size: 339px;
     block-size: 55px;
