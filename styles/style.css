@@ -262,10 +262,10 @@
   transform: scaleX(1);
 }
 
-.like-icon {
+/* .like-icon {
   inline-size: 27px;
   block-size: 24px;
-}
+} */
 
 .button__text {
   position: relative;

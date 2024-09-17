@@ -22,3 +22,7 @@
     transform: translateX(4px)
   }
 }
+
+.sparks { 
+  opacity: 0;
+}
