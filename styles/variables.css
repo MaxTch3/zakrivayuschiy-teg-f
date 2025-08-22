@@ -9,4 +9,6 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --color-background: #fff;
   --color-text: #000;
+  --color-border: var(--color-text);
+  --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
