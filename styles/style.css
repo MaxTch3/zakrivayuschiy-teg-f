@@ -30,7 +30,7 @@
   margin: 100px auto;
   border: 2px solid var(--color-border);
   padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem) 0;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), monospace;
   background-color: var(--color-background);
 }
 
