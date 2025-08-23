@@ -49,3 +49,44 @@
   line-height: 1;
   text-transform: uppercase;
 }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--color-background);
+  padding-block-end: 25px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 1;
+  font-variation-settings: 'wght' var(--font-weight-heading);
+  padding: 4px 12px;
+  line-height: 1.22;
+}
+
+.card__image {
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-block-start: 2px solid #000;
+  border-block-end: 2px solid #000;
+}
+
+.card__descripton-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+}
+
+.card__description {
+  font-size: 18px;
+  line-height: 1.17;
+}
