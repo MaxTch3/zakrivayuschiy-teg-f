@@ -183,7 +183,6 @@
 
   .save-button {
     flex-direction: column;
-    inline-size: 306px;
     block-size: 84px;
   }
 
