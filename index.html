@@ -20,7 +20,7 @@
     <h1 class="header__title">&lt;/html&gt;</h1>
     <p class="header__subtitle">закрывающий тег</p>
   </header>
-  <main>
+  <main class="main-content content-width">
     <section class="cards content-width" aria-label="Мой путь в обучении">
       <article class="card">
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
@@ -60,12 +60,18 @@
             </svg>
 
           </button>
-          <button class="card__like-button" type="button">
+          <button class="button card__like-button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
     </section>
+    <button class="button save-button" type="button">
+      <svg viewBox="0 0 22 21" class="save-button__icon">
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <span class="button__text">Сохранить на память</span>
+    </button>
   </main>
   <script src="./scripts/like.js"></script>
 </body>
