@@ -170,8 +170,8 @@
 .save-button {
   gap: 8px;
   margin: 0 auto;
-  inline-size: 306px;
-  block-size: 84px;
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  block-size: 55px;
 }
 
 .save-button__icon {
@@ -180,8 +180,11 @@
 }
 
 @media (width<=375px) {
+
   .save-button {
     flex-direction: column;
+    inline-size: 306px;
+    block-size: 84px;
   }
 
   .save-button__icon {
