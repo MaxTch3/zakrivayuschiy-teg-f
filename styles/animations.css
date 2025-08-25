@@ -19,3 +19,13 @@
     transform: scale(1.25);
   }
 }
+
+@keyframes spark-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

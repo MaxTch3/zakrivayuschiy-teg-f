@@ -217,6 +217,10 @@
   opacity: 0;
 }
 
+.like-icon.is-liked .sparks {
+  animation: spark-opacity 0.3s 0.3s ease-in alternate 2;
+}
+
 .button__text {
   font-family: var(--font-accent), monospace;
   font-size: 14px;
