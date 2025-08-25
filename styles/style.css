@@ -154,7 +154,34 @@
   border: 2px solid #000;
   background-color: var(--color-background);
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px var(--color-accent);
+}
+
+.button::after {
+content: '';
+position: absolute;
+inset: 0;
+background-color: var(--color-accent);
+transition: transform 0.5s ease-in-out;
+transform: translateX(-100%);
+}
+
+.button:hover::after {
+  transform: translateX(0);
+}
+
+
+
 
 .card__like-button {
   inline-size: 130px;
@@ -225,6 +252,10 @@
   font-family: var(--font-accent), monospace;
   font-size: 14px;
   line-height: 0.9;
+  mix-blend-mode: difference;
+  color: var(--button-text-hover-color);
+  position: relative;
+  z-index: 1;
 }
 
 .save-button {
