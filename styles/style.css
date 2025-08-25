@@ -141,22 +141,33 @@
   align-items: center;
   border: none;
   padding: 0;
+  outline: 2px solid transparent;
+  outline-offset: -1px;
   background-color: transparent;
+  transition: outline-color 0.3s ease;
   cursor: pointer;
   inline-size: 39px;
   block-size: 36px;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--color-accent);
+}
+
 .button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
-  background-color: var(--color-background);
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  position: relative;
   overflow: hidden;
+  background-color: var(--color-background);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -168,20 +179,17 @@
 }
 
 .button::after {
-content: '';
-position: absolute;
-inset: 0;
-background-color: var(--color-accent);
-transition: transform 0.5s ease-in-out;
-transform: translateX(-100%);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-accent);
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
 }
 
 .button:hover::after {
   transform: translateX(0);
 }
-
-
-
 
 .card__like-button {
   inline-size: 130px;
@@ -249,13 +257,13 @@ transform: translateX(-100%);
 }
 
 .button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-hover-color);
   font-family: var(--font-accent), monospace;
   font-size: 14px;
   line-height: 0.9;
   mix-blend-mode: difference;
-  color: var(--button-text-hover-color);
-  position: relative;
-  z-index: 1;
 }
 
 .save-button {
@@ -266,14 +274,18 @@ transform: translateX(-100%);
 }
 
 .save-button__icon {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-hover-color);
+  mix-blend-mode: difference;
   inline-size: 21px;
   block-size: 21px;
 }
 
 .dialog {
-  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   border: 2px solid var(--color-border);
   padding: 28px clamp(2.5rem, 2.7201rem + -0.939vw, 1.875rem);
+  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 }
 
 .dialog::backdrop {
@@ -288,26 +300,26 @@ transform: translateX(-100%);
 
 .dialog__content {
   display: flex;
-  gap: 18px;
   align-items: center;
+  gap: 18px;
 }
 
 .dialog__floppy-image {
+  flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
-  flex-shrink: 0;
 }
 
 .dialog__text {
-  text-transform: uppercase;
   font-family: var(--font-accent), monospace;
   font-size: 14px;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .dialog__button {
-  block-size: 38px;
   text-transform: uppercase;
+  block-size: 38px;
 }
 
 @media (width<=375px) {
