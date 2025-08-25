@@ -12,4 +12,7 @@
   --color-border: var(--color-text);
   --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --text-stroke-color: #fff;
+  --heart-stroke: #000;
+  --heart-fill: #f00;
+  --heart-sparks-fill: #f00;
 }
