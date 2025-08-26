@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -264,6 +263,35 @@
   font-size: 14px;
   line-height: 0.9;
   mix-blend-mode: difference;
+}
+
+.contrast-filter {
+  filter: contrast(1.5);
+}
+
+.blur-filter {
+  filter: blur(2px);
+}
+
+.grayscale-filter {
+  filter: grayscale(1);
+}
+
+.saturate-filter {
+  filter: saturate(2);
+}
+
+.hue-rotate-filter {
+  filter: hue-rotate(50deg);
+}
+
+.sepia-filter {
+  filter: sepia(0.6);
+}
+
+.photo-journey-filter {
+  filter:
+    brightness(1.05) contrast(1.1) saturate(1.15) hue-rotate(15deg);
 }
 
 .save-button {
