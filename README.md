@@ -12,8 +12,5 @@
 
 Сайт адаптирован под мобильные разрешения экранов: от 375px до 1440px
 
-### Адрес GitHub-репозитория:
-https://github.com/MaxTch3/zakrivayuschiy-teg-f
-
 ### Адрес сайта на GitHub Pages:
 https://maxtch3.github.io/zakrivayuschiy-teg-f/
